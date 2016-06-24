@@ -1,0 +1,13 @@
+<html>
+<head> Infinite Scroll </head>
+<body>
+%div{"data-ng-app" => "demo"}
+  %div{"data-ng-controller" => "MainController"}
+    %ul{"when-scrolled" => "more()", :class => "hello"}
+      %li{"data-ng-repeat" => "item in items"}
+        {{item}}
+    %div{"data-ng-show" => "loading"} Loading
+
+%h1 INFINITE SCROLLING IN ANGULARJS
+</body>
+</html>

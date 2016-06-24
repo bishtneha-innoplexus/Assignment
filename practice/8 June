@@ -1,0 +1,62 @@
+﻿Minutes (8 June 2016)
+
+
+9:30 A.M.
+
+Teams and Project Allotted.
+Team : UI
+Mentor : Rohit Aggarwal
+Project allotted : Cool menus, filters and auto-complete
+Introduction to rest of the team members : Kishore, Aravind and Akash Mishra
+
+10:00 A.M.
+
+Skype Call with Giric(Gurgaon)
+
+Explained various tasks assigned to the team.
+Cool menus : Use creativity to make more interactive menus and displays.
+Filters : Based on search results of users, what filters he uses more frequently.
+Auto-complete : Google like search result
+
+Technologies Use : Angularjs
+
+Task Given : To have a good understanding of angularjs.
+
+10:30 A.M
+
+Started Angularjs. 
+
+11:00 A.M
+
+Meeting with Rohit.
+Mentors assigned to everyone
+Mentor : Riyaz
+
+Task Given : To make an instagram like app which has infinite scrolling and on clicking the image displays that image in new window along with its details.
+
+11:30 A.M.
+
+Started working on the app.
+Studied about infinite scrolling. Went through some Angularjs tutorials.
+
+3:00 P.M.
+
+Problem faced : Dynamic loading of images from instagram. 
+Solution : Work with local storage of images.
+
+Started collecting data and included those in our app.
+
+4:00 P.M. 
+
+Successfully implemented infinite scrolling with static images using angular js
+
+4:30 P.M.
+
+Problem faced : Could not redirect images to new window.
+Tried a lot of options using json file.
+
+
+5:30 P.M.
+
+Was asked to have a much better understanding of Angularjs and javascript.
+Task assigned : To study javascript.

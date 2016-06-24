@@ -1,0 +1,24 @@
+<h3>Clients Table:</h3>
+
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th style="width:10%">#</th>
+                <th style="width:20%">Name</th>
+                <th style="width:40%">Designation</th>
+                <th style="width:30%">Company</th>
+                <th style="width:40%">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="client in (filtered = (selectedClient | companyFilter:companyselection ) | orderBy:sortselected | orderBy:selectedsort )">
+                <td>{{$index + 1}}</td>
+                <td><em>{{client.name}}</em>
+
+                </td>
+                <td>{{client.designation}}</td>
+                <td>{{client.company.name}}</td>
+                <td>{{client.salary}}</td>
+            </tr>
+        </tbody>
+    </table>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UI Experiment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script href="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  
+
+</head>
+<body  data-ng-app="clientApp">
+	
+
+<div data-ng-controller="ClientCtrl">
+    <ul class="inline" style ="list-style-type:none">
+        <li>
+            <div class="alert alert-info">
+                 <h4>Total Filtered Client: {{filtered.length}}</h4>
+
+            </div>
+        </li>
+        <li>
+           <my-dropdown inputmodels="companyList" selectall="checkAll();" deselect="uncheckAll();"  clientselect="setSelectedClient(id);" sort="sort(option);" namesort="namesort(option);"></my-dropdown>
+        </li>
+        <li>
+        </li>
+    </ul>
+    <hr/>
+     <my-customer inputmodel="clients" companyselection="selectedCompany" sortselected="sortselected" selectedsort="selectedsort"></my-customer>
+    <!-- <pre>{{selectedCompany|json}}</pre>
+<pre>{{companyList|json}}</pre>
+<pre>{{clients|json}}</pre>
+-->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script src="angular-resource.js"></script>
+<script src="underscore-min.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infinite Scroll</title>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/files_controllers.js"></script>
+</head>
+<body ng-controller="FilesListCtrl" ng-app="my-awesome-app">
+    <div class="container" when-scrolled="loadImages()">
+        <h2>Images</h2>
+        <ul class="images">
+            <li ng-repeat="image in images">
+                <img ng-src="{{ image.thumbnailLink }}">
+                {{ image.title }}
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

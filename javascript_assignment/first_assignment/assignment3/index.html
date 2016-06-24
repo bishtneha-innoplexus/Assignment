@@ -1,0 +1,49 @@
+<html>
+<head>
+	<link rel="stylesheet" href="jquery.typeahead.css">
+</head>
+<body>
+<form id="form-country_v1" name="form-country_v1">
+    <div class="typeahead__container">
+        <div class="typeahead__field">
+ 
+            <span class="typeahead__query">
+                <input class="js-typeahead-country_v1" name="country_v1[query]" type="search" placeholder="Search" autocomplete="off">  
+            </span>
+
+            <span class="typeahead__button">
+                <button type="submit">
+                    <i class="typeahead__search-icon"></i>
+                </button>
+            </span>
+ 
+        </div>
+    </div>
+</form>
+
+    <div class="typeahead__container1">
+        <div class="typeahead__field1">
+ 
+            <span class="typeahead__query1">
+                <input class="js-typeahead-country_v2" id="pick_me" name="country_v2[query]" type="date" placeholder="Dates" min="2016-05-01">
+            </span>
+
+            <span class="typeahead__button1">
+                <button onclick="pick_date()" >
+                    <i class="typeahead__search-icon"></i>
+                </button>
+                <br>
+            </span>
+ 			<div id="disp"></div>
+        </div>
+    </div>
+
+<div id="printdiv"  ></div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="underscore.js" type="text/javascript" ></script>
+	<script src="typeahead.js" type="text/javascript" ></script>
+	<script src="index.js" type="text/javascript" ></script>
+</body>
+</html>

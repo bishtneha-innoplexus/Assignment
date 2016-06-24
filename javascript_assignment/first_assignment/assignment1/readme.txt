@@ -1,0 +1,30 @@
+Date: 9th june 2016
+
+:Javascript
+
+Javascript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages.
+
+Why are we learning javascript?
+
+1] JavaScript is a lightweight, interpreted programming language.
+2] Designed for creating network-centric applications.
+3] Complementary to and integrated with Java.
+4] Complementary to and integrated with HTML.
+5] Open and cross-platform.
+
+The merits of using JavaScript are:
+
+1] Less server interaction: You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.
+2] Immediate feedback to the visitors: They don't have to wait for a page reload to see if they have forgotten to enter something.
+3] Increased interactivity: You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.
+4] Richer interfaces: You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.
+
+problems faced while learning javascript:
+
+1]
+2]
+3]
+4]
+5]
+
+While writing a program in javascript, i realised there may be a situation when you need to adopt one out of a given set of paths. In such cases, you need to use conditional statements that allow your program to make correct decisions and perform right actions.

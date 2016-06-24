@@ -1,0 +1,13 @@
+minutes of the day:21st june 2016
+
+problem-statement: to make an angularjs app with different filters it should replicate paytm website. where the data changes dynamically without refreshing and the code should be resuable.
+
+time: 9:30am
+-> A navigation bar had to be created in the main html frame to get the static frame in the html.
+-> knowledge of bootstrap was needed in that process to make it look presentable with css templaes already been taken care of. 
+time: 11:00am
+time: 12:00am
+time:  2:00pm
+time: 4:00pm
+time: 6:00pm
+time: 8:00pm

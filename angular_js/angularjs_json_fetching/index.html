@@ -1,0 +1,57 @@
+<html ng-app="countryApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js JSON Fetching Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script>
+      var countryApp = angular.module('countryApp', []);
+      countryApp.controller('CountryCtrl', function ($scope, $http){
+        $http.get('countries.json').success(function(data) {
+          $scope.countries = data;
+          $scope.code = [];
+          angular.forEach($scope.countries,function(val,key){
+            $scope.code.push(val.name);
+          });
+        });
+        $scope.Code = function(){
+            $scope.code = [];
+            angular.forEach($scope.countries,function(val,key){
+              $scope.code.push(val.code);
+            }); 
+          }
+          $scope.Name = function(){
+            $scope.code = [];
+            angular.forEach($scope.countries,function(val,key){
+              $scope.code.push(val.name);
+            });
+           }
+          $scope.population = function(){
+            $scope.code = [];
+            angular.forEach($scope.countries,function(val,key){
+            $scope.code.push(val.population);
+            });
+          }
+      });
+    </script>
+  </head>
+  <body ng-controller="CountryCtrl">
+	<h2>Angular.js JSON Fetching Example</h2>
+  <form>
+    <input type="submit" id="submit" ng-click="Code()" value="Code">
+    <input type="submit" ng-click="Name()" value="name">
+    <input type="submit" ng-click="population()" value="population">
+    <table>
+      <tr>
+        <th>Code</th>
+        <th>Country</th>
+        <th>Population</th>
+      </tr>
+      <tr ng-repeat="country in countries">
+         <div>{{code}}</div>
+      </tr>
+    </table>
+    
+    </form>
+  </body>
+</html>
